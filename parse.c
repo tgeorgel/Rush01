@@ -61,9 +61,8 @@ int     ft_valid_input(char *arg)
     return (1);
 }
 
-int     **ft_fill_argv(int **tab, char *arg, int size)
+int     **ft_fill_argv(int **tab, char *arg)
 {
-    int     i;
     int     j;
 
     j = 0;

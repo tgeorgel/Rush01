@@ -14,8 +14,6 @@ int     ft_solve(int **grid, int i, int j);
 int     main(int argc, char **argv)
 {
     int     **grid;
-    int     i;
-    int     j;
 
     if (argc != 2 || ft_valid_input(argv[1]) != 1) 
         return ft_puterr("Error\n\0");

@@ -7,7 +7,7 @@ int     **ft_malloc_tab(int size)
 
     i = 0;
 
-    tab = (int **) malloc(sizeof(int) * size * size);
+    tab = (int **) malloc(sizeof(int *) * size);
 
     while (i < size)
     {

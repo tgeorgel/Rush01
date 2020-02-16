@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 void ft_print_tab(int **tab, int min, int max);
 
@@ -126,12 +127,14 @@ int ft_solve(int **grid, int i, int j)
 
     if (i == 5)
         return (1);
+    if (j == 5)
+        return (0);
     
     while (val <= 4)
     {
         if ((ft_slv_row_right(grid, i, j, val) == 1)
             && (ft_slv_row_left(grid, i, j, val) == 1)
-            // && (ft_slv_col_up(grid, i, j, val) == 1)
+            && (ft_slv_col_up(grid, i, j, val) == 1)
             && (ft_slv_col_down(grid, i, j, val) == 1))
         {
             grid[i][j] = val;
