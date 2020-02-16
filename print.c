@@ -30,7 +30,10 @@ void    ft_putnbr(int i)
         ft_putchar('-');
         i *= -1;
     }
-    ft_putchar(i + '0');
+    if (i == 8)
+        ft_putchar('.');
+    else
+        ft_putchar(i + '0');
 }
 
 void    ft_print_tab(int **tab, int min, int max)
